@@ -6,7 +6,7 @@ services:
     # reload enables auto-reload so the server will restart after changes are made to the code base.
     # workers 1 provides a single worker process.
     # host 0.0.0.0 defines the address to host the server on.
-    # port 8000 defines the port to host the server on.
+    # port 8000 defines the port to host the server on (port 8002 is exposed).
     command: uvicorn app.main:app --reload --workers 1 --host 0.0.0.0 --port 8000
     volumes:
       - ./src/:/usr/src/app/
